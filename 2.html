@@ -3,19 +3,77 @@
   <head>
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaJcript</a></li>
+      </ol>
 
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaJcript</a></li>
-    </ol>
+      <div id="article">
+        <h2>What is CSS? (CSS란 무엇인가?)</h2>
+        <h3>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</h3>
+        <img src="css.jpg" width="100%">
 
-    <h2>What is CSS? (CSS란 무엇인가?)</h2>
-    <h3>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</h3>
-    <img src="css.jpg" width="100%">
+        <p>eliminate <strong>duplication</strong> in coding is important!</p>
+        <p>Two methods to insert CSS into the webpage:
+        <ul>
+          <li><strong>use &ltstyle&gt tag</strong></li>
+          <li><strong>use syle property</strong></li>
+        </ul>
+
+        <p>
+        a {<br>
+        &nbsp&nbsp<u>color</u>:<u>red</u>;<br>
+        }<br>
+        <ul>
+          <li>a -> Selector</li>
+          <li>color:red; -> Declaration</li>
+          <li>color -> Property</li>
+          <li>red -> Value</li>
+        </ul>
+        </p>
+        <p>&ltstyle&gt tag is a grammar of HTML, and contents inside of the &ltstyle&gt tag are CSS.<br>
+        &ltstyle&gt tag requires additional code, such as '(destination) { }', because it cannot explain to whom it should be assigned.</p>
+
+        <p>style="" is property of HTML<br>
+        Style property is promised to have a CSS effect as a value.<br>
+        Style property does not have to use a selector(선택자), since it applies the effect to the tag that style property is located.</p>
+
+        <p>Two major foundation that rules CSS: <strong>Effect</strong> and <strong>Selector</strong></p>
+
+        <p>class="" is property of HTML<br>
+        Want to find the tag that has class value: use point(.)<br>
+        The value of the class property can be multiple values, and separated by spacing.<br>
+        Tag can contain multiple properties and can be jointly controlled by multiple selectors.<br>
+        (But this is not a good method - tag can be affected by multiple classes)</p>
+
+        <p>Influence :ID selector > class selector > tag selector<br>
+        Want to find the tag that has ID value: use #</p>
+        <p>Tags that uses full screen: <strong>block level element</strong><br>
+        Tags that uses their own content size: <strong>inline element</strong><br>
+        display: inline; -> change block level element to inline element<br>
+        display: block; -> change inline element to block level element</p>
+        <ul>
+          <h4>CSS Box Model</h4>
+          <li>Specify content size: width, height</li>
+          <li>Interval between content and border: padding</li>
+          <li>Interval between border and border: margin</li>
+        </ul>
+        <p>Determining the volumetricity by treating each HTML tag as a box, and determining volume is a key element in design</p>
+        <p>&ltdiv&gt tag & &ltspan&gt tag: tags that are meaningless (just for design purposes)<br>
+        &ltdiv&gt tag: block level element<br>
+        &ltspan&gt tag: inline element</p>
+        <p><a href="https://caniuse.com" target="_blank" class="link">Can I Use</a>:<br>
+        This site show statistics on how many CSS, HTML, and JavaScript technologies currently support that technology.</p>
+        <p>Using <strong>mediaquery</strong> can run mediaquery code when satisfies specific conditions (Reactive web creation is possible)</p>
+        <p>CSS files can be created separately to eliminate duplication</p>
+      </div>
+    </div>
   </body>
 </html>
