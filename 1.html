@@ -4,15 +4,22 @@
     <title>WEB1 - HTML</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
   </head>
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
       <ol>
+        <div class="switch">
+          <input type="button" value="night" onclick="
+            nightDayHandler(this);
+          ">
+        </div>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaJcript</a></li>
+        <li><a href="3.html" >JavaJcript</a></li>
       </ol>
       <!--
       <h1><a href="index.html"><font color="red">WEB</font></a></h1>
@@ -49,7 +56,7 @@
           <li>machine like search engine: &lttitle&gt</li>
         </ul>
 
-        <a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 sepcification" id="link">W3C</a>
+        <a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 sepcification">W3C</a>
 
         <h3>The twenty-five elements used on the most pages are:</h3>
         <table border="1">
@@ -159,11 +166,11 @@
 
         <h3>free static web hosting</h3>
         <ul>
-          <li><a href="https://bitballoon.com" target="_blank" class="link">BitBalloon</a></li>
-          <li><a href="http://neocities.org" target="_blank" class="link">Neocities</a></li>
-          <li><a href="https://azure.microsoft.com/en-us/services/storage/blobs" target="_blank" class="link">Azure Blob</a></li>
-          <li><a href="https://cloud.google.com/storage/" target="_blank" class="link">Google Cloud Storage</a></li>
-          <li><a href="http://aws.amazon.com/s3" target="_blank" class="link">Amazon S3</a></li>
+          <li><a href="https://bitballoon.com" target="_blank">BitBalloon</a></li>
+          <li><a href="http://neocities.org" target="_blank">Neocities</a></li>
+          <li><a href="https://azure.microsoft.com/en-us/services/storage/blobs" target="_blank">Azure Blob</a></li>
+          <li><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a></li>
+          <li><a href="http://aws.amazon.com/s3" target="_blank">Amazon S3</a></li>
         </ul>
         <input type="checkbox" onclick="alert('HI')">
       </div>

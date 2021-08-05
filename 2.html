@@ -4,12 +4,19 @@
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
   </head>
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
       <ol>
+        <div class="switch">
+          <input type="button" value="night" onclick="
+            nightDayHandler(this);
+          ">
+        </div>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
         <li><a href="3.html">JavaJcript</a></li>
@@ -69,7 +76,7 @@
         <p>&ltdiv&gt tag & &ltspan&gt tag: tags that are meaningless (just for design purposes)<br>
         &ltdiv&gt tag: block level element<br>
         &ltspan&gt tag: inline element</p>
-        <p><a href="https://caniuse.com" target="_blank" class="link">Can I Use</a>:<br>
+        <p><a href="https://caniuse.com" target="_blank">Can I Use</a>:<br>
         This site show statistics on how many CSS, HTML, and JavaScript technologies currently support that technology.</p>
         <p>Using <strong>mediaquery</strong> can run mediaquery code when satisfies specific conditions (Reactive web creation is possible)</p>
         <p>CSS files can be created separately to eliminate duplication</p>

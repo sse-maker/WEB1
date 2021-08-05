@@ -24,9 +24,6 @@ ol, tr {
   padding-left: 10px;
   padding-bottom: 15px;
 }
-.link {
-  color: red;
-}
 #grid {
   display: grid;
   grid-template-columns: 150px 1fr;

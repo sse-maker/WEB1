@@ -4,43 +4,22 @@
     <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
   </head>
 
   <body>
-    <h1><a href="index.html" id="col">WEB</a></h1>
+    <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
       <ol>
         <div class="switch">
           <input type="button" value="night" onclick="
-            var target = document.querySelector('body');
-              if (this.value === 'night') {
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                this.value = 'day';
-
-                var alist = document.querySelectorAll('#col');
-                var i = 0;
-                while (i < alist.length) {
-                  alist[i].style.color = 'powderblue';
-                  i = i + 1;
-                }
-              } else {
-                target.style.backgroundColor = 'white';
-                target.style.color = 'black';
-                this.value = 'night';
-
-                var alist = document.querySelectorAll('#col');
-                var i = 0;
-                while (i < alist.length) {
-                  alist[i].style.color = 'blue';
-                  i = i + 1;
-                }
-              }
+            nightDayHandler(this);
           ">
         </div>
-        <li><a href="1.html" id="col">HTML</a></li>
-        <li><a href="2.html" id="col">CSS</a></li>
-        <li><a href="3.html" id="col">JavaJcript</a></li>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaJcript</a></li>
       </ol>
 
       <div id="article">
@@ -88,6 +67,27 @@
 
         <p>push(): insert data to the end of the array<br>
         Boolean data type comes in the while statement. (runs until false comes in the while statement)</p>
+
+        <p>input: argument & parameter, output: return<br>
+        Argument: value passed when calling a function<br>
+        Parameter: variable that accepts passed argument<br></p>
+
+        <strong>Refactoring: making code efficient even though it works the same</strong>
+
+        <p>Within an event, 'this' is promised to point to the tag to which event belongs.<br>
+        The value 'this' in code within an independent function will have a global object, no longer point to the input.<br>
+        Gives 'this' value when the function is executed so that the 'this' value points to the input within the function, and change 'this' to the parameter in the code within the function.</p>
+
+        <p>Array - can contain data, data is stored <strong>in order</strong><br>
+        Object - can contain data, data is stored <strong>without in order</strong><br>
+        Method: function belonging to an object<br>
+        Property: variable belonging to an object<br>
+        In object, use comma(,) to distinguish property from property.</p>
+
+        <p>Representative JavaJcript library: <a href="https://jquery.com/" target="_blank">jQuery</a></p>
+
+        <p>UI: operating tools used by the users to control the system<br>
+        API: operating tools used to create applications when programming</p>
       </div>
     </div>
   </body>
